@@ -1,0 +1,96 @@
+@import "mixins.scss";
+@import "bourbon/_bourbon.scss";
+
+$neutral: #c2c2c2;
+$dark: #333;
+$button: red;
+$buttonHover: white;
+
+
+body{
+	margin: auto;
+	background: $neutral;
+	@media screen and (max-width: 480px) {
+		// mobile
+		}
+
+	@media screen and (min-width:481px) and (max-width:800px) {
+		// tablet
+		}
+
+	@media screen and (min-width: 801px) {
+		// desktop
+		} 	
+	}
+
+header{
+	background: $neutral;
+	width:100%;
+	}
+
+img.editorial {
+	width:100%;
+	}
+
+section.hero {
+	@media screen and (max-width: 480px) {
+		// mobile
+		background:url("../img/hero_mobile.jpg") 50% 0% no-repeat;
+		height:400px;
+		}
+	@media screen and (min-width:481px) and (max-width:800px) {
+		// tablet
+		background:url("../img/hero_tablet.jpg") 45% 0% no-repeat;
+		height:500px;
+		}
+	@media screen and (min-width: 801px) {
+		// desktop
+		background:url("../img/hero_desktop.jpg") 45% 0% no-repeat;
+		height:600px;
+		} 	
+	}
+
+button{
+	background:$button;
+	margin:auto;
+	text-transform:uppercase;
+	padding:8px 12px;
+	margin:15px 0 15px 0;
+	border:none;
+		&:hover{
+			background:$buttonHover;
+			}
+		@include rounded(2px);
+		@include shadow(4px);
+	}
+
+.center{
+	text-align: center;
+	float:center;
+	}
+
+.product{
+
+	margin: auto;
+
+	@media screen and (max-width: 645px) {
+		// mobile
+		width:320px;
+		}
+
+	@media screen and (min-width:646px) and (max-width:970px) {
+		// tablet
+		width:644px;
+		}
+
+	@media screen and (min-width: 971px) {
+		// desktop
+		width:968px;
+		} 
+
+}
+
+.item{
+	@include transition (all 1s ease-in-out);
+
+}
