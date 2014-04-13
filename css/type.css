@@ -2,7 +2,6 @@ h1, h2 {
   font-family: Arial, sans-serif;
   font-size: 40px;
   font-weight: bold;
-  padding: 6px 20px 0px 15px;
   line-height: 42px;
   letter-spacing: -0.06em; }
 
@@ -12,6 +11,11 @@ p, button {
   font-weight: normal; }
 
 p {
-  line-height: 16px;
-  padding: 6px 20px 5px 20px;
+  line-height: 16px; }
+
+.type {
+  padding: 5px 30px;
   max-width: 400px; }
+  @media screen and (max-width: 480px) {
+    .type {
+      margin: auto; } }

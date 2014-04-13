@@ -9,54 +9,96 @@
     <link rel="stylesheet" href="css/fix.css" media="screen" />
     <link rel="stylesheet" href="css/hello.css" media="screen" />
     <link rel="stylesheet" href="css/type.css" media="screen" >
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<!--
+    <script>
+    $(function() { 
+      $.mobile.defaultHomeScroll = 0;
+    });
+</script>
+-->
 </head>
 <body>
 
-<header>
-    <img src="svg/atop.svg">
-</header>
+<div data-role="page" id="home">
+  <header data-role="header">
+      <img src="svg/atop.svg">
+  </header>
 
-<section class="hero">
+  <section class="hero">
+  </section>
 
-  <!--
-    <img class="editorial" src="img/hero_mobile.jpg" />
-  -->  
-</section><!-- section hero -->
+  <section class="type" id="section-intro" >
+      <h1>The New ATOP</h1>
+      <p>We gave our classic series a twist</p> 
+      <p>Our unique patented world time movement now comes in a variety of colours for every personality.</p>
+      <p>Made from high grade PC and with an aluminium alloy city bezel to switch to the desired timezone attached to a sweat resistant silicon rubber strap. The hands are copper alloy with luminous functionality for better visibility.</p>
+      <div class="center" class="type">
+        <button type="button">Show me the watches!</button>
+      </div>
+  </section> <!-- section intro -->
 
-<section class="type" id="section-intro" >
-    <h1>The New ATOP</h1>
-    <p>We gave our classic series a twist</p> 
-    <p>Our unique patented world time movement now comes in a variety of colours for every personality.</p>
-    <p>Made from high grade PC and with an aluminium alloy city bezel to switch to the desired timezone attached to a sweat resistant silicon rubber strap. The hands are copper alloy with luminous functionality for better visibility.</p>
-    
-    <div class="center"><button type="button">Show me the watches!</button></div>
+  <div data-role="collapsible" class="type" data-theme="a" data-content-theme="a">
+     <h3>I'm a header</h3>
+     <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
+  </div>
 
-</section> <!-- section intro -->
+<div class="product">
+        <ul>  
+          <li>
+            <a href="#blue" ><img class="item" src="img/range_blue.png"></a>
+          </l1>
 
-<section class="type" id="section-history">
-    <h1>Atop Precision Industries</h1>
-    <p>Atop Precision Industries is a leading manufacturer of watches specialising in the world time function with over 15 years of experience in the watch making business making micro precise parts with its own research and development department to boot.</p>
-    <p>The inventors, Mark Lin and his wife Grace thought up the concept of a watch with a built in 24 world time zone feature after their major customers had moved production from Taiwan to other production locations.</p>
-    
-    <div class="center"><button type="button">Show me the watches!</button></div>
+          <li>
+            <a href="item"><img class="item" src="img/range_orange.png"></a>
+          </l1>
 
-</section> <!-- section history -->
+          <li>
+            <a href="item"><img class="item" src="img/range_purple.png"></a>
+          </l1>
 
-<section class="type" id="section-lifestyle">
-    <p>Their efforts were recognised after 8 years and over a million dollars spent on development costs in the form of the prestigious iF Design Award awarded in 2003 for the technological advancements they achieved. Many awards soon followed including the German Reddot design award, Promotional Gidt award and the Symbol of Excellence Award.</p>
-    <p>Now their patented leading world time clock and watch is available in a variety of colours, materials and innovative wearable designs are available to you.</p>
-</section> <!-- section lifestyle -->
+          <li>
+            <a href="item"><img class="item" src="img/range_red.png"></a>
+          </l1>
+        </ul>
+</div>
+  <div class="center"><button type="button">Show me the watches!</button></div>
 
-<section id="section-range">
-    <h1>Colours for everyone</h1>
-    <div class="product">
-      <a href="item"><img class="item" src="img/range_blue.png"></a>
-      <a href="item"><img class="item" src="img/range_orange.png"></a>
-      <a href="item"><img class="item" src="img/range_purple.png"></a>
-      <a href="item"><img class="item" src="img/range_red.png"></a>
+  <section class="type">
+    <h1>Contact us</h1>
+    <p>All content &copy; Ideahouse Corp. S/B <br /> / ATOP watches 2013</p>
+    <p>Our trusted retailer
+        <br /> w: <a href="http://www.ideahouse.com.my" >ideahouse.com.my</a>
+        <br /> t: +603 6275 4648
+        <br /> f: +603 6272 1648
+        <br /> e: info@ideahouse.com.my
+        <br /> a: Kuala Lumpur, MALAYSIA
+    </p>
+    <p>ATOP headquaters 
+        <br /> t: +603 6275 4648
+        <br /> f: +603 6272 1648
+        <br /> e: info@ideahouse.com.my
+        <br /> a: Kuala Lumpur, MALAYSIA
+    </p>
+   </section>
 
-      <div class="center"><button type="button">Show me the watches!</button></div>
-      <!--
+    <img src="img/shop1.jpg" alt="One of our many in-store displays" class="editorial">
+    <img src="img/shop2.jpg" alt="One of our many in-store displays" class="editorial">
+  
+</div><!-- page -->
+
+
+<div data-role="page" id="blue">
+    <div data-role="header">
+      <h1>The Blue Watch</h1>
+      <a data-rel="back" data-direction="reverse">Home</a>
+
+    </div>
+
           <table id="productTable">
             <tr>
               <td class="label">Bezel</td>
@@ -95,28 +137,10 @@
               <td>27cm</td>
             </tr>
           </table>  
-      -->
-      </div>
-</section>
+  
 
-<footer>
-    <h1>CONTACT</h1>
-    <p>All content &copy; Ideahouse Corp. S/B <br /> / ATOP watches 2013</p>
-    <p>Our trusted retailer
-        <br /> w: <a href="http://www.ideahouse.com.my" >ideahouse.com.my</a>
-        <br /> t: +603 6275 4648
-        <br /> f: +603 6272 1648
-        <br /> e: info@ideahouse.com.my
-        <br /> a: Kuala Lumpur, MALAYSIA
-    </p>
-    <p>ATOP headquaters 
-        <br /> t: +603 6275 4648
-        <br /> f: +603 6272 1648
-        <br /> e: info@ideahouse.com.my
-        <br /> a: Kuala Lumpur, MALAYSIA
-    </p>
-    <img src="img/shop1.jpg" alt="One of our many in-store displays" class="editorial">
-    <img src="img/shop2.jpg" alt="One of our many in-store displays" class="editorial">
-</footer>
+</div>
+
+
 </body>
 </html>

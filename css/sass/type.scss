@@ -1,15 +1,13 @@
+
 h1, h2{
 	font:{
 		family: Arial, sans-serif;
 		size:40px;
 		weight:bold;
 	}
-
-	padding:6px 20px 0px 15px;
 	line-height:42px;
 	letter-spacing:-0.06em;
 	}
-
 p, button{
 	font:{
 		family:monospace;
@@ -21,7 +19,22 @@ p, button{
 
 p{
 	line-height:16px;
-	padding:6px 20px 5px 20px;
-	max-width:400px;
 	}
 
+.type{
+
+	padding:5px 30px;
+	max-width:400px;
+
+	@media screen and (max-width: 480px) {
+		// mobile
+			margin:auto;
+			}
+	@media screen and (min-width:481px) and (max-width:800px) {
+		// tablet
+			}
+	@media screen and (min-width: 801px) {
+		// desktop
+			} 	
+
+}
