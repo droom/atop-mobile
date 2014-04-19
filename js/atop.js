@@ -181,9 +181,6 @@ $('.feature-wrap').show();
 });
 
 
-
-
-
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -196,18 +193,16 @@ $(function() {
           }, 400, 'easeInOutExpo');
           
           return false;
-/*
-$('html, body').animate(
-  {scrollTop: targetOffset},
-  {duration: 400, easing: 'easeInOutExpo'}
-);
-*/
 
       }
     }
   });
 });
 
+
+  $(document).ready(function() {
+    $(".fancy_title").lettering();
+  });
 
 
 

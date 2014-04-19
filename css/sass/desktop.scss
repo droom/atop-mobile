@@ -4,6 +4,8 @@
 
 $light: #f2f2f2;
 $dark: #383838;
+$medium: #cccccc;
+
 $button: red;
 $buttonHover: white;
 $red: #dd2d42;
@@ -39,50 +41,39 @@ hr{
 	margin: 0;
 	border: none;
 	height: 1px;
-	background: $dark;
+	background: $medium;
 	}
-
-/*
-hr{
-	display:block;
-	clear:both;
-	padding: 0;
-	margin: 0;
-	border: none;
-	height: 1px;
-	background: white;
-	border-bottom:1px solid #c2c2c2;
-	}
-*/
 
 h1, h2, h3, h4, ul, li{
 	margin:0;
 	padding:0;
 	}
 
+h1, h2{
+	font:{
+		family: Helvetica, Arial, sans-serif;
+		style: normal;
+		weight:800;
+		}
+	}
+
+
 h1{
 	font:{
-		family: Arial, sans-serif;
 		size:70px;
-		weight:bold;
 		}
 	line-height:58px;
-	letter-spacing:-0.05em;
 	color:$red;
 	padding-top:290px;
 	}
 
 h2{
 	font:{
-		family: Arial, sans-serif;
 		size:40px;
-		weight:bold;
 		}
 	line-height:40px;
-	letter-spacing:-0.06em;
 	padding:20px 0 35px 0;
-		color:$dark;
-
+	color:$dark;
 	}
 
 h3{
@@ -230,7 +221,7 @@ table{
 .loader{
 	position:relative;
 	margin:auto;
-	top:-90px;
+	top:-70px;
 	left:-35px;
 	}
 
@@ -301,6 +292,10 @@ table{
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
 }
+
+
+
+
 
 img.editorial{
 	width: 50%;
