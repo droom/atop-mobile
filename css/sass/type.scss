@@ -1,40 +1,32 @@
+h1, h2, h3, h4, ul, li{
+	margin:0;
+	padding:0;
+	}
 
 h1, h2{
 	font:{
 		family: Arial, sans-serif;
 		size:40px;
 		weight:bold;
-	}
-	line-height:42px;
+		}
+	line-height:40px;
 	letter-spacing:-0.06em;
+	padding:20px 0 35px 0;
 	}
-p, button{
+
+h3{
+	padding:15px 0 8px 0;
+}
+
+
+p, button, table, td, tr, h4{
 	font:{
 		family:monospace;
 		size:12px;
 		weight:normal;
+		}
 	}
-
-	}
-
 p{
 	line-height:16px;
+	color:$dark;
 	}
-
-.type{
-
-	padding:5px 30px;
-	max-width:400px;
-
-	@media screen and (max-width: 480px) {
-		// mobile
-			margin:auto;
-			}
-	@media screen and (min-width:481px) and (max-width:800px) {
-		// tablet
-			}
-	@media screen and (min-width: 801px) {
-		// desktop
-			} 	
-
-}

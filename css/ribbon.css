@@ -8,15 +8,13 @@
     transition: width 400ms ease-in-out;
   }
 
-
 /* prevent ribbon creasing */
 .r1, .r2, .r3{
-    -webkit-backface-visibility: hidden;
-    }
+  -webkit-backface-visibility: hidden;
+  }
 
 .r1{
    margin-left:19px;
-
    }
 
 .r2{
@@ -40,7 +38,6 @@
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   }
-
 
 .swatchBoundary{
   width:300px;
@@ -78,9 +75,9 @@
   }
 
 .box h1{
-    font-size:1.2em;
-    color:#999;
-    line-height:1em;
-    padding:0;
-    margin:0;
-   }
+  font-size:1.2em;
+  color:#999;
+  line-height:1em;
+  padding:0;
+  margin:0;
+  }

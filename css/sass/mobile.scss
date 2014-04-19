@@ -1,0 +1,100 @@
+header{
+	position:absolute;
+	top:0;
+	left:0;
+	background:none;
+	z-index:8;
+	}
+
+.break{display:block;}
+
+
+h1{
+	padding-top:145px;
+	}
+
+section{
+	display:block;
+	clear:both;
+	margin: auto;
+	width:100%;
+
+		&.hero {
+		background: url("../img/hero_mobile.jpg") 50% 0% no-repeat;
+		height:400px;
+		}
+
+		&.product{
+		margin: auto;
+		width: 300px;
+		}
+	}
+	
+.column-l{
+	float: none;
+	width: 100%;
+	min-height: none;
+	clear: left;
+	max-width:420px;
+	margin:auto;
+	}
+
+.column-r{
+	float: none;
+	width: 100%;
+	clear: left;
+	margin-top:20px;
+	margin:auto;
+	max-width:420px;
+	}
+
+.loader{
+	top:-100px;
+	left:0px;
+	margin:auto;
+	}
+
+.loaded{
+	overflow: hidden;
+	display: block;
+	min-height: 455px;	
+	}
+
+#lightbox{
+	width: 110%;
+	margin-left: -4%;
+	}
+
+.wrap{
+	width:100%;
+	}
+	
+.ribbon{
+	width:350px;
+	}
+
+.type{
+	width:85%;
+	margin:auto;
+	}
+
+	img.editorial{
+		width: 100%;
+	}
+
+.editorial2{
+	display:none;
+}
+
+.feature-wrap{
+background: #f2f2f2;
+background: -moz-linear-gradient(top,  #f2f2f2 14%, #e2e2e2 43%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(43%,#e2e2e2));
+background: -webkit-linear-gradient(top,  #f2f2f2 14%,#e2e2e2 43%);
+background: -o-linear-gradient(top,  #f2f2f2 14%,#e2e2e2 43%);
+background: -ms-linear-gradient(top,  #f2f2f2 14%,#e2e2e2 43%);
+background: linear-gradient(to bottom,  #f2f2f2 14%,#e2e2e2 43%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e2e2e2',GradientType=0 );
+
+
+}
