@@ -104,24 +104,10 @@ var productArr = [{
 }
 ]; 
 
-/*
-function checkPosition() {
-    if (window.matchMedia('(max-width: 640px) and (max-width: 930px)').matches) {
-        console.log("hey")
-    } else {
-        console.log("no")
-    }
-*/
-
-/*
-$( "li:odd" ).css( "float", "right" );
-$( ".wrap" ).css( "width", "650px" );
-*/
 
 $('.feature-wrap').hide();
-/*
-$('section.feature').hide();
-*/
+
+$('.logo').attr('fill', '#dd2d42');
 
 
 $('a.watch').click(function () {
@@ -165,18 +151,6 @@ $('.feature-wrap').show();
     $('.logo').attr('fill', '#'+productHex);
     $('.column-l').css('background-color', '#'+productHex);
     $('.clock').attr('fill', '#'+productHex);
-
-    /*
-    if (productReverse === true){
-      $('td').css('color', '#f2f2f2');
-      $('#lightboxTitle').css('color', '#f2f2f2');
-
-    } else {
-      $('td').css('color', '#000');
-      $('#lightboxTitle').css('color', '#000');
-    }
-    */
-
 
 });
 

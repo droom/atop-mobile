@@ -13,7 +13,6 @@ $default: #c0c0c0;
 
 body{
 	background:$light;
-	text-rendering: optimizeLegibility
 	}
 
 header{
@@ -50,6 +49,8 @@ h1, h2, h3, h4, ul, li{
 	}
 
 h1, h2{
+	text-rendering: optimizeLegibility;	
+
 	font:{
 		family: Helvetica, Arial, sans-serif;
 		style: normal;
@@ -65,15 +66,68 @@ h1{
 	line-height:58px;
 	color:$red;
 	padding-top:290px;
+	letter-spacing:-0.045em;
+
 	}
+
+
+
+h1 .char2 {
+vertical-align: top;
+margin-left: -0.086em;
+}
+
+h1 .char3 {
+vertical-align: top;
+margin-left: -0.012em;
+}
+
+h1 .char4 {
+vertical-align: top;
+}
+
+h1 .char6 {
+vertical-align: top;
+margin-left: -0.012em;
+}
+
+h1 .char7 {
+vertical-align: top;
+margin-left: 0.012em;
+}
+
+h1 .char15 {
+vertical-align: top;
+margin-left: -0.012em;
+}
+
+h1 .char13 {
+vertical-align: top;
+margin-left: 0.025em;
+}
+
+
+
+h1 .char11 {
+vertical-align: top;
+}
+
+h1 .char10 {
+vertical-align: top;
+margin-left: -0.025em;
+}
+
+	
 
 h2{
 	font:{
-		size:40px;
+		size:2.8em;;
 		}
-	line-height:40px;
+	line-height:1.03em;
 	padding:20px 0 35px 0;
 	color:$dark;
+	letter-spacing:-0.036em;
+
 	}
 
 h3{
@@ -86,11 +140,17 @@ p, button, table, td, tr, h4{
 		size:12px;
 		weight:normal;
 		}
+	line-height:16px;
+	color:$dark;
+
 	}
+
+/*
 p{
 	line-height:16px;
 	color:$dark;
 	}
+*/
 
 button{
 	text-transform:	uppercase;
@@ -115,10 +175,16 @@ button{
 	float: center;
 	}
 
+
 #logo{
-	fill: $red;
 	z-index: 8;
 	}
+
+/*
+.logo{
+	fill : $red;
+	}
+*/
 
 .productTitle,
 .productColour{
@@ -292,6 +358,20 @@ table{
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
 }
+
+
+
+
+/*
+
+header {
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+*/
+
 
 
 
