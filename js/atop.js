@@ -105,7 +105,7 @@ var productArr = [{
 ]; 
 
 
-$('.feature-wrap').hide();
+//$('.feature-wrap').hide();
 
 $('.logo').attr('fill', '#dd2d42');
 
@@ -114,19 +114,18 @@ $('a.watch').click(function () {
 
 $('.feature-wrap').show();
 
-    // Which watch is clicked?
     var productChoice = $(this).data('id');
 
     // Which row of watches to return to?
     var productReturn = ($(this).attr("id"));
 
-    //$('.loader').show();
+    var heightnumber = $('#lightbox').css('height');
+    $('.lightbox-wrap').css('height', heightnumber);
+
+    $('.spinner').show();
+
     $('#lightbox').hide();
 
-    // When loaded
-    $('#lightbox').bind('load', function() {
-      $('#lightbox').delay(1100).fadeIn('700');
-      });
 
     var productTitle = productArr[productChoice-1].title;
     var productCode = productArr[productChoice-1].code;    
@@ -135,24 +134,31 @@ $('.feature-wrap').show();
     var productColour = productArr[productChoice-1].colour;
     var productReverse = productArr[productChoice-1].reverse;
 
-    console.log(productTitle);
-    console.log(productCode);
-    console.log(productHex);
-    console.log(productURL);
-    console.log(productColour);
-    console.log(productReverse);
 
     $('#lightbox').attr('src', "img/lightbox/"+productCode+".png");
+
+
+    $('#lightbox').load(function(){
+      console.log("loaded");
+      $('#lightbox').fadeIn('700');
+      $('.lightbox-wrap').css('height', 'auto');
+      $('.spinner').hide();
+     
+      });
+
+
     $('.productColour').text(productColour);
     $('.productTitle').text(productTitle);
-
     $('h1').css('color', '#'+productHex);
-
     $('.logo').attr('fill', '#'+productHex);
-    $('.column-l').css('background-color', '#'+productHex);
+    $('.info').css('background-color', '#'+productHex);
+
+    $('button.cta').css('background-color', '#'+productHex);
+
     $('.clock').attr('fill', '#'+productHex);
 
 });
+
 
 
 $(function() {
@@ -173,10 +179,6 @@ $(function() {
   });
 });
 
-
-  $(document).ready(function() {
-    $(".fancy_title").lettering();
-  });
 
 
 

@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="stylesheet" href="css/normalize.css" media="screen" />
-    <link rel="stylesheet" href="css/fix.css" media="screen" />
     <link rel="stylesheet" href="css/ribbon.css" media="screen" />
     <link rel="stylesheet" href="css/swatch.css" media="screen" />
 
-    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
 
     <link rel="stylesheet" media="screen" href="css/desktop.css" />
     <link rel="stylesheet" media="screen and (min-width: 640px) and (max-width: 930px)" href="css/tablet.css" />
@@ -56,34 +56,26 @@
 
       </div>
   </section>
+<hr />
 
   <section class="type intro">
-    <div class="column">
+    <div class="column ">
         <h2>The new ATOP world series</h2>
-        <p>We gave our classic series a twist.</p> 
-        <p>Our unique patented world time movement now comes in a variety of colours for every personality.</p>
+        <p class="breathe">We gave our classic series a twist.</p> 
+        <p class="breathe">Our unique patented world time movement now comes in a variety of colours for every personality.</p>
         <p>Made from high grade PC and with an aluminium alloy city bezel to switch to the desired timezone attached to a sweat resistant silicon rubber strap. The hands are copper alloy with luminous functionality for better visibility.</p>
     </div>
-
-<!--
-    <div class="column">
-       <h3>I'm a header</h3>
-       <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
-    </div>
--->    
   </section>
 
-
-
-
 <hr />
+
 <div class="product-wrap">
-<section class="product wrap" id="section-range">
+<section class="product" id="range">
+
     <ul>  
       <li>
         <section class="box box-first">
           <a href="#section-profile"  class="watch" data-id="1" id="product01"><img src="img/product/vwa01.png" /></a>
-          <!-- <h4>01</h4> -->
           <div class="swatchBoundary">
             <div class="swatchWrap">
               <div class="r1 ribbon vwa01-A" ></div>
@@ -96,7 +88,6 @@
       <li class="even">
         <section class="box">
           <a href="#section-profile" class="watch" data-id="2" id="product02"><img src="img/product/vwa02.png" /></a>
-          <!-- <h4>02</h4> -->
           <div class="swatchBoundary">
             <div class="swatchWrap">
               <div class="r1 ribbon vwa02-A" ></div>
@@ -109,7 +100,6 @@
       <li>
         <section class="box">
           <a href="#section-profile" class="watch" data-id="3" id="product03"><img src="img/product/vwa03.png" /></a>
-          <!--<h4>03</h4>-->
           <div class="swatchBoundary">
             <div class="swatchWrap">
               <div class="r1 ribbon vwa03-A" ></div>
@@ -122,18 +112,17 @@
     </ul>
 </section>
 </div>
-
-
 <hr />
 
 <div class="feature-wrap clearfix">
-<section class="feature type clearfix" id="section-profile">
+<section class="feature typeboxed clearfix" id="section-profile">
 
-    <div class="column-l">
+    <div class="column-l info">
       <h2>
         <span class="productColour">Choose</span><br/>
         <span class="productTitle">a watch!</spanr>
       </h2>
+
       <table id="productTable">
             <tr>
                 <td class="label">Bezel</td>
@@ -172,45 +161,67 @@
                 <td>27cm</td>
             </tr>
       </table>
-      <button><a href="#section-range">Back</a></button>
-      <button class="cta">Find out more</button>
+
     </div>
 
     <div class="column-r">
+        <div class="lightbox-wrap">
+          <img src="img/lightbox/vwa-empty.png" id="lightbox" />
+        </div>
 
-      <div class="loader">
-        <svg class="clock-hand-large" x="0px" y="0px" viewBox="-159.5 60.5 320 320" enable-background="new -159.5 60.5 320 320"
-           xml:space="preserve"><g><path class="clock" fill="#7A7A7A" d="M4.366,220.501v-65.689v-2.639c0-0.161-0.062-0.307-0.159-0.42l-0.064-0.064l-3.187-3.187
-            c-0.253-0.252-0.659-0.252-0.913,0l-3.186,3.187l-0.064,0.063c-0.098,0.113-0.158,0.26-0.158,0.421v2.639v65.689H4.366z"/>
-        </g>
-        <circle class="clock" fill="#7A7A7A" cx="0.5" cy="220.5" r="7.09"/>
-        </svg>
+        <!--
+        <div class="spinner-wrap">
 
-        <svg  class="clock-hand-small" x="0px" y="0px" viewBox="-159.5 60.5 320 320" enable-background="new -159.5 60.5 320 320"
-           xml:space="preserve">
-        <g>
-          <path class="clock" fill="#424142" d="M4.366,217.672v-48.895v-2.639c0-0.162-0.062-0.308-0.16-0.42l-0.064-0.065l-3.186-3.186
-            c-0.252-0.251-0.66-0.251-0.912,0l-3.187,3.187l-0.063,0.063c-0.098,0.113-0.16,0.259-0.16,0.421v2.639v48.895H4.366z"/>
-        </g>
-        <circle class="clock" fill="#424142" cx="0.5" cy="220.5" r="8.887"/>
-        </svg>
-      </div>
+            <svg class="clock-hand-large" x="0px" y="0px" width="500px" height="620px" viewBox="-90 -200 500 620" enable-background="new -90 -200 500 620" xml:space="preserve"><g><path fill="#7A7A7A" d="M162.657,107.833v-45.16v-1.814c0-0.111-0.042-0.211-0.109-0.289l-0.044-0.044l-2.19-2.19 c-0.174-0.174-0.453-0.174-0.628,0l-2.19,2.19l-0.044,0.044c-0.067,0.077-0.108,0.178-0.108,0.289v1.814v45.16H162.657z"/></g><circle fill="#7A7A7A" cx="160" cy="110" r="4.875"/></svg>
 
-      <div class="loaded">
-        <img src="img/lightbox/vwa01.png" id="lightbox" />
-      </div>
+            <svg class="clock-hand-large" x="0px" y="0px" viewBox="-159.5 60.5 320 320" enable-background="new -159.5 60.5 320 320" xml:space="preserve"><g><path class="clock" fill="#7A7A7A" d="M4.366,220.501v-65.689v-2.639c0-0.161-0.062-0.307-0.159-0.42l-0.064-0.064l-3.187-3.187
+            c-0.253-0.252-0.659-0.252-0.913,0l-3.186,3.187l-0.064,0.063c-0.098,0.113-0.158,0.26-0.158,0.421v2.639v65.689H4.366z"/></g><circle class="clock" fill="#7A7A7A" cx="0.5" cy="220.5" r="7.09"/></svg>
+
+            <svg class="clock-hand-small" x="0px" y="0px" viewBox="-159.5 60.5 320 320" enable-background="new -159.5 60.5 320 320" xml:space="preserve"><g><path class="clock" fill="#424142" d="M4.366,217.672v-48.895v-2.639c0-0.162-0.062-0.308-0.16-0.42l-0.064-0.065l-3.186-3.186
+            c-0.252-0.251-0.66-0.251-0.912,0l-3.187,3.187l-0.063,0.063c-0.098,0.113-0.16,0.259-0.16,0.421v2.639v48.895H4.366z"/></g><circle class="clock" fill="#424142" cx="0.5" cy="220.5" r="8.887"/></svg>
+
+            <svg class="clock-hand-small" x="0px" y="0px" width="500px" height="620px" viewBox="0 0 500 620" enable-background="new 0 0 500 620" xml:space="preserve"><g><path fill="#424142" d="M252.658,305.776v-33.614v-1.814c0-0.11-0.043-0.212-0.111-0.287l-0.043-0.046l-2.19-2.188 c-0.173-0.174-0.454-0.174-0.627,0l-2.191,2.188l-0.043,0.045c-0.067,0.076-0.11,0.178-0.11,0.288v1.814v33.614H252.658 L252.658,305.776z"/></g><circle fill="#424142" cx="250" cy="310" r="6.109"/></svg>
+
+        </div>
+        -->
+
     </div>
 
+    <div class="column-l buttons">
+      <button class="generic" href="#">Continue <!--&#8595;-->&#x2193;</button>
+    </div>
 </section>
+
+</div>
 <hr />
+
+<div class="blurb-wrap">
+  <section class="blurb type">
+    <div class="column">
+        <h2>Claim your <br/>free gift</h2>
+        <p class="breathe">Atop has partnered with IdeaHouse. For a limited time, get a free lasered personalised gift tag with every ATOP* purchase through our trusted retailer.</p>
+
+
+        <p>Chosen watch: Yellow VWA—02</p>
+        
+    </div>
+
+
+        <div class="column-l buttons">
+          <button class="cta" href="#" id="cta">Continue &rarr;</button>
+        </div>
+
+
+  </section>
 </div>
 
+
+<hr />
 
 
 <footer>
   <section class="type">
   <div class="column">
-    <h2>Contact</h2>
     <p>All content &copy; Ideahouse Corp. S/B <br /> / ATOP watches 2013</p>
     <p>Our trusted retailer
         <br /> w: <a href="http://www.ideahouse.com.my" >ideahouse.com.my</a>
@@ -226,14 +237,17 @@
         <br /> a: Kuala Lumpur, MALAYSIA
     </p>
   </div>
+  </section>
+</footer>
+
+
+
+<section class="shop clearfix">
+    <img src="img/shop1.jpg" alt="One of our many in-store displays" class="editorial1">
+    <img src="img/shop2.jpg" alt="One of our many in-store displays" class="editorial2">
 </section>
 
-    <img src="img/shop1.jpg" alt="One of our many in-store displays" class="editorial editorial1">
 
-
-    <img src="img/shop2.jpg" alt="One of our many in-store displays" class="editorial editorial2">
-
-</footer>
 
 </div><!-- page -->
 
@@ -247,26 +261,29 @@
 
 
 
-
-
     <script type="text/javascript" src="js/atop.js"></script>
 
-
-    <script type="text/javascript" src="js/lettering.js"></script>
-
 <!--
-
-
-
-  <script src="kerning.min.js"></script>
-
-
-
-<script>
-  $(document).ready(function() {
-    $("h1").lettering();
-  });
-</script>
+    <script type="text/javascript" src="js/lettering.js"></script>
 -->
+
+
+
+  <script type="text/javascript">
+  WebFontConfig = { fontdeck: { id: '42840' } };
+
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+  </script>
+
+
+
 </body>
 </html>

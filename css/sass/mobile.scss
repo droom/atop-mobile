@@ -1,12 +1,4 @@
-$light: #f2f2f2;
-$dark: #383838;
-$medium: #cccccc;
-
-$button: red;
-$buttonHover: white;
-$red: #dd2d42;
-$default: #c0c0c0;
-
+@import "includes/variables.scss";
 
 header{
 	position:absolute;
@@ -31,57 +23,55 @@ section{
 	width:100%;
 
 		&.hero {
-		background: url("../img/hero_mobile.jpg") 50% 0% no-repeat;
+		background: url("../img/hero_mobile.jpg") 47% 0% no-repeat;
 		height:400px;
 		}
 
 		&.product{
+		padding:40px 0;
+
 		margin: auto;
 		width: 300px;
 		}
 	}
 	
 .column-l{
-	float: none;
 	width: 100%;
 	min-height: none;
 	clear: left;
-	max-width:420px;
-	margin:auto;
-			padding: 0 15px 300px 15px;
+	margin: auto;
 
 	}
 
 .column-r{
-	float: none;
 	width: 100%;
 	clear: left;
-	margin:auto;
-	max-width:420px;
-	margin-top:-280px;
+	margin: auto;
 	}
 
-.loader{
-	top:-100px;
-	left:0px;
-	margin:auto;
+
+img#lightbox{
+	width: 100%;
 	}
 
-.loaded{
-	overflow: hidden;
-	display: block;
-	height: 35px;	
+button.cta{
+	margin-top:20px;
 	}
 
-#lightbox{
-	width: 110%;
-	margin-left: -4%;
+img.editorial{
+	width: 100%;
 	}
 
 .wrap{
 	width:100%;
 	}
 	
+
+
+.blurb-wrap{
+	background:none;
+}
+
 .ribbon{
 	width:350px;
 	}
@@ -91,9 +81,12 @@ section{
 	margin:auto;
 	}
 
-	img.editorial{
-		width: 100%;
+.typeboxed{
+	width:87%;
+	margin:auto;
 	}
+
+
 
 .editorial2{
 	display:none;
@@ -101,28 +94,4 @@ section{
 
 
 
-p, button, table, td, tr, h4{
-	font:{
-		family: 'Inconsolata', monospace;		
-		size:16px;
-		weight:normal;
-		}
-	line-height:18px;
-	color:$dark;
 
-	}
-
-
-.feature-wrap{
-	/*
-background: #f2f2f2;
-background: -moz-linear-gradient(top,  #f2f2f2 14%, #e2e2e2 43%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(43%,#e2e2e2));
-background: -webkit-linear-gradient(top,  #f2f2f2 14%,#e2e2e2 43%);
-background: -o-linear-gradient(top,  #f2f2f2 14%,#e2e2e2 43%);
-background: -ms-linear-gradient(top,  #f2f2f2 14%,#e2e2e2 43%);
-background: linear-gradient(to bottom,  #f2f2f2 14%,#e2e2e2 43%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e2e2e2',GradientType=0 );
-*/
-
-}
