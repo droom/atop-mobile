@@ -1,0 +1,162 @@
+body
+  background: $base
+  margin: 0
+  padding: 0
+
+header
+  position: fixed
+  top: 0
+  left: 0
+  background: none
+  z-index: 8
+
+footer
+  padding: 100px 0 0 0
+
+table
+  margin-bottom: 8px
+  width: 100%
+  td
+    color: $darkGrey
+    vertical-align: top
+    padding: 2px 0 16px 0
+    border-top: 1px solid $darkGrey
+  td:first-child
+    width: 35%
+    padding-right: 10px
+  td:last-child
+    width: 65%
+
+section
+  display: block
+  clear: both
+  margin: auto
+
+  &.lifestyle
+    background: url("../img/hero_lifestyle.jpg") 50% 0% no-repeat $base
+    height: 600px
+
+  &.product
+    padding: 20px 0
+    width: 900px
+
+  &.feature
+    padding-top: 40px
+
+  &.shop
+
+  &.type
+    max-width: 900px
+    margin: auto
+    padding: 10px 0 50px 170px
+    &.hero
+      background: url("../img/hero_desktop.png") 50% 0% no-repeat $base
+      height: 550px
+      padding: 0 0 0 170px
+
+  &.type-boxed
+    max-width: 900px
+    margin:auto
+    margin-left: 156px
+    padding: 10px 0 50px 0
+
+.col
+  margin: 0
+  max-width: 340px
+.col-l
+  float: left
+  width: 38%
+  clear: left
+.col-r
+  float: right
+  width: 60%
+  clear: none
+  position: relative
+.col-btn
+  padding: 0
+  margin-top: 40px
+
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max)
+  body
+  header
+    position: absolute
+    top: 0
+    left: 0
+    background: none
+    z-index: 8
+  section
+    &.product
+      min-width: 600px
+      max-width: 640px
+      padding: 35px 0
+    &.type
+      width: 100%
+      padding: 10px 0 70px 52px
+      &.hero
+        padding: 0 0 0 52px
+
+    &.type-boxed
+      width: 100%
+      margin: auto
+      padding: 10px 0 70px 40px
+
+    ul
+      li:nth-child(even)
+        float: right
+
+  table
+    margin-bottom: 30px
+    td
+      padding: 0 0 10px 0
+    td:first-child
+      width: 28%
+      padding-right: 10px
+    td:last-child
+      width: 55%
+
+  .col-l
+    width: 45%
+  .col-r
+    width: 52%
+
+@media (max-width: $phone-max)
+  header
+    position: absolute
+    top: 0
+    left: 0
+    background: none
+    z-index: 8
+
+  section
+    display: block
+    clear: both
+    margin: auto
+    width: 100%
+
+    &.product
+      padding: 40px 0
+      margin: auto
+      width: 300px
+    &.type
+      width: 100%
+      padding: 0 0 30px 20px
+      &.hero
+        width: 100%
+        background: url("../img/hero_mobile.jpg") 50% 0% no-repeat $base
+        height: 320px
+        padding: 0 0 0 20px
+
+    &.type-boxed
+      width: 87%
+      margin: auto
+    .col-l
+      width: 100%
+      min-height: none
+      clear: left
+      margin: auto
+    .col-r
+      width: 100%
+      clear: left
+      margin: auto
+

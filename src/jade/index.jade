@@ -27,134 +27,119 @@ html
               v0.836C113.199,30.893,113.333,32.945,111.42,34.858z')
               path.logo(d='M106.407,24.774h-1.701h-4.031h-1.701c0,0-3.234,0.163-3.234,3.834v4.699h8.966h1.701\
               c0,0,3.234-0.163,3.234-3.834v-0.865C109.642,24.937,106.407,24.774,106.407,24.774z')
-      section#hero.hero
-        .type
-          h1 ATOP the world.
+      section#hero.type.hero
+        h1 ATOP the world.
       hr
       section.type.intro
-        .column
+        .col
           h2 The new ATOP world series
-          p.breathe We gave our classic series a twist.
-          p.breathe Our unique patented world time movement now comes in a variety of colours for every personality.
+          p We gave our classic series a twist.
+          p Our unique patented world time movement now comes in a variety of colours for every personality.
           p Made from high grade PC and with an aluminium alloy city bezel to switch to the desired timezone attached to a sweat resistant silicon rubber strap. The hands are copper alloy with luminous functionality for better visibility.
       hr
-      .product-wrap
-        section#range.product
-          ul
-            li
-              section.box.box-first
-                a#product01.watch(href='#section-profile', data-id='1')
-                  img(src='img/product/vwa01.png')
-                .swatchBoundary
-                  .swatchWrap
-                    .r1.ribbon.vwa01-A
-                    .r2.ribbon.vwa01-B
-                    .r3.ribbon.vwa01-C
-            li.even
-              section.box
-                a#product02.watch(href='#section-profile', data-id='2')
-                  img(src='img/product/vwa02.png')
-                .swatchBoundary
-                  .swatchWrap
-                    .r1.ribbon.vwa02-A
-                    .r2.ribbon.vwa02-B
-                    .r3.ribbon.vwa02-C
-            li
-              section.box
-                a#product03.watch(href='#section-profile', data-id='3')
-                  img(src='img/product/vwa03.png')
-                .swatchBoundary
-                  .swatchWrap
-                    .r1.ribbon.vwa03-A
-                    .r2.ribbon.vwa03-B
-                    .r3.ribbon.vwa03-C
+      section#range.product
+        ul
+          li
+            section.box.box-first
+              a#product01.watch(href='#section-profile', data-id='1')
+                img(src='img/product/vwa01.png')
+              .swatch-boundary
+                .swatch-wrap
+                  .r1.ribbon.vwa01-A
+                  .r2.ribbon.vwa01-B
+                  .r3.ribbon.vwa01-C
+          li
+            section.box
+              a#product02.watch(href='#section-profile', data-id='2')
+                img(src='img/product/vwa02.png')
+              .swatch-boundary
+                .swatch-wrap
+                  .r1.ribbon.vwa02-A
+                  .r2.ribbon.vwa02-B
+                  .r3.ribbon.vwa02-C
+          li
+            section.box
+              a#product03.watch(href='#section-profile', data-id='3')
+                img(src='img/product/vwa03.png')
+              .swatch-boundary
+                .swatch-wrap
+                  .r1.ribbon.vwa03-A
+                  .r2.ribbon.vwa03-B
+                  .r3.ribbon.vwa03-C
       hr
-
-
-      .feature-wrap.clearfix
-        section#section-profile.feature.typeboxed.clearfix
-          .column-l.info
-            h2
-              span.productColour Choose
-              br
-              span.productTitle a watch!
-            table#productTable
-              tr
-                td.label Bezel
-                td.desc Anodized Aluminum Alloy
-              tr
-                td Case
-                td High Grade Bayer PCwith FDA degree
-              tr
-                td Glass
-                td Hardened
-              tr
-                td Dial
-                td Copper
-              tr
-                td Hands
-                td Copper Alloy with Luminous Function
-              tr
-                td Strap material
-                td Silicone Rubber
-              tr
-                td Weight
-                td 43m
-              tr
-                td Case Diameter
-                td 4.45cm
-              tr
-                td Strap length
-                td 27cm
-
-          .column-r
-            .lightbox-wrap
-              img#lightbox(src='img/lightbox/vwa-empty.png')
-          .column-l.buttons
-            button.generic(href='#') Continue &darr;
+      section#section-profile.feature.type-boxed.clearfix
+        .col-l.info
+          h2.caps
+            span.productColour Choose
+            br
+            span.productTitle a watch!
+          table#productTable
+            tr
+              td Bezel
+              td Anodized Aluminum Alloy
+            tr
+              td Case
+              td High Grade Bayer PC with FDA degree
+            tr
+              td Glass
+              td Hardened
+            tr
+              td Dial
+              td Copper
+            tr
+              td Hands
+              td Copper Alloy with Luminous Function
+            tr
+              td Strap material
+              td Silicone Rubber
+            tr
+              td Weight
+              td 43m
+            tr
+              td Case Diameter
+              td 4.45cm
+            tr
+              td Strap length
+              td 27cm
+        .col-r
+          .lightbox-wrap
+            img#lightbox(src='img/lightbox/vwa-empty.png')
+        .col-l.col-btn
+          button.generic(href='#') Continue &darr;
       hr
-      .blurb-wrap
-        section.blurb.type
-          .column
-            h2
-              | Claim your
-              br
-              | free gift
-            p.breathe Atop has partnered with IdeaHouse. For a limited time, get a free lasered personalised gift tag with every ATOP* purchase through our trusted retailer.
-            p Chosen watch: Yellow VWA&mdash;02
-          .column-l.buttons
-            button#cta.cta(href='#') Continue &rarr;
+      section.type
+        .col
+          h2
+            | Claim your
+            br
+            | free gift
+          p Atop has partnered with IdeaHouse. For a limited time, get a free lasered personalised gift tag with every ATOP* purchase through our trusted retailer.
+          p Chosen watch: Yellow VWA&mdash;02
+        .col-l.col-btn
+          button#cta.cta(href='#') Continue &rarr;
       hr
       footer
         section.type
-          .column
+          .col
             p
               | All content &copy; Ideahouse Corp. S/B
-              br
               | / ATOP watches 2013
             p
-              | Our trusted retailer
-              br
-              | w:
-              a(href='http://www.ideahouse.com.my') ideahouse.com.my
-              br
-              | t: +603 6275 4648
-              br
-              | f: +603 6272 1648
-              br
-              | e: info@ideahouse.com.my
-              br
-              | a: Kuala Lumpur, MALAYSIA
-            p
-              | ATOP headquaters
-              br
-              | t: +603 6275 4648
-              br
-              | f: +603 6272 1648
-              br
-              | e: info@ideahouse.com.my
-              br
-              | a: Kuala Lumpur, MALAYSIA
+              li Our trusted retailer
+              li
+                = "w: "
+                a(href='http://www.ideahouse.com.my') ideahouse.com.my
+              li t: +603 6275 4648
+              li f: +603 6272 1648
+              li e: info@ideahouse.com.my
+              li a: Kuala Lumpur, MALAYSIA
+            ul
+              li ATOP headquaters
+              li t: +603 6275 4648
+              li f: +603 6272 1648
+              li e: info@ideahouse.com.my
+              li a: Kuala Lumpur, MALAYSIA
+
       section.shop.clearfix
         img.editorial1(src='img/shop1.jpg', alt='One of our many in-store displays')
         img.editorial2(src='img/shop2.jpg', alt='One of our many in-store displays')

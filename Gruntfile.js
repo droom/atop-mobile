@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         livereload: true,
       },
       sass: {
-        files: ['src/sass/*.scss'],
+        files: ['src/sass/*.sass'],
         tasks: ['sass'],
       },
       jade: {
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'dist/css/app.css': 'src/sass/app.scss',
+          'dist/css/app.css': 'src/sass/app.sass',
         }
       }
     },

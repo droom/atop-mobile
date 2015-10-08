@@ -1,0 +1,45 @@
+#logo
+  z-index: 8
+#lightbox
+  z-index: 4
+img.editorial1,
+img.editorial2
+  width: 50%
+  float: left
+button
+  font-family: "Din Monospace Regular", "Lucida Console", Monaco, monospace
+  font-size: 1.4rem
+  font-weight: normal
+  font-style: normal
+  letter-spacing: 0.05em
+  word-spacing: -0.2em
+  line-height: 1.3em
+  color: $darkGrey
+  border: none
+  background-color: $default
+  text-transform: uppercase
+  padding: 20px 25px
+  border: none
+
+  &.generic
+    margin-top: 6px
+  &.cta
+    margin-top: -6px
+    margin-left: -6px
+    margin-bottom: 20px
+
+    transition: all 100ms ease-in
+    box-shadow: 6px 6px 0px 0px rgba(50, 50, 50, 0.4)
+
+@media (max-width: $phone-max)
+  img.editorial
+    width: 100%
+  img.editorial2
+    display: none
+  img#lightbox
+    width: 100%
+  button
+    &.cta
+      margin-top: 20px
+
+
