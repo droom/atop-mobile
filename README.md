@@ -1,7 +1,7 @@
 ## Synopsis
 
-A responsive website for approved Ideahouse agents.
-Built using: Jade (http://jade-lang.com/), Sass (http://sass-lang.com/)
-Dependencies: jQuery, SemanticUI
+A responsive website for approved ATOP's 'World Series' range. Malaysian markeet.
 
-## Installation
+## Specs
+Built using: Jade (http://jade-lang.com/), Sass (http://sass-lang.com/)
+Dependencies: jQuery
