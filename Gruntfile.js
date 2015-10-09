@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         livereload: true,
       },
       sass: {
-        files: ['src/sass/*.sass'],
+        files: ['src/sass/*.sass' , 'src/sass/includes/*.sass'],
         tasks: ['sass'],
       },
       jade: {

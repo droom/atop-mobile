@@ -1,12 +1,33 @@
 #logo
   z-index: 8
-#lightbox
+  position: fixed
+  top: 0
+  left: 0
+@media (min-width: 0px) and (max-width: $tablet-max)
+  #logo
+    position: absolute
+
+img#lightbox
   z-index: 4
+  margin: auto
+  // padding-top: 30px
+
+@media (max-width: $phone-max)
+  img#lightbox
+    width: 100%
+
 img.editorial1,
 img.editorial2
   width: 50%
   float: left
-button
+
+@media (max-width: $phone-max)
+  img.editorial1
+    width: 100%
+  img.editorial2
+    display: none
+
+a.button
   font-family: "Din Monospace Regular", "Lucida Console", Monaco, monospace
   font-size: 1.4rem
   font-weight: normal
@@ -14,30 +35,29 @@ button
   letter-spacing: 0.05em
   word-spacing: -0.2em
   line-height: 1.3em
-  color: $darkGrey
+  // color: $darkGrey
   border: none
-  background-color: $default
+  // background-color: $default
   text-transform: uppercase
   padding: 20px 25px
   border: none
+  display: block
+  // display: inline-block
 
   &.generic
-    margin-top: 6px
-  &.cta
-    margin-top: -6px
-    margin-left: -6px
-    margin-bottom: 20px
+    margin: 0 auto
 
+  &.generic + &.generic
+    margin-top: 15px
+
+  &.cta
+    margin-top: 40px
+    margin-left: -6px
+    // margin-bottom: 10px
     transition: all 100ms ease-in
     box-shadow: 6px 6px 0px 0px rgba(50, 50, 50, 0.4)
 
 @media (max-width: $phone-max)
-  img.editorial
-    width: 100%
-  img.editorial2
-    display: none
-  img#lightbox
-    width: 100%
   button
     &.cta
       margin-top: 20px
