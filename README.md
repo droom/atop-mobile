@@ -1,6 +1,6 @@
 ## Synopsis
 
-A responsive website for approved ATOP's 'World Series' range. Malaysian markeet.
+Campaign site for ATOP VWA/WWA SERIES. Malaysian market.
 
 ## Specs
 Built using: Jade (http://jade-lang.com/), Sass (http://sass-lang.com/)
