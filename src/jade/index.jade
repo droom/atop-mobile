@@ -9,10 +9,8 @@ html
     link(rel='stylesheet', media='screen', href='css/app.css')
 
   body(data-role='page')
-    //- #home
-    //- header
     a(href='#hero')#logo
-      svg(x='0px', y='0px', width='133px', height='60px', viewbox='0 0 133 60', enable-background='new 0 0 133 60', xml:space='preserve')
+      svg(x='0px', y='0px', width='133px', height='60px', viewbox='0 0 133 60', enable-background='new 0 0 133 60', xml:space='default')
         g
           path.logo(d='M38.362,25.329h-7.979c-2.242,0-2.824,1.91-2.974,2.815h13.928C41.186,27.239,40.604,25.329,38.362,25.329z\
           ')
@@ -43,8 +41,8 @@ html
     section#range.product
       ul
         li
-          section.box.box-first
-            a#product01.watch(href='#profile', data-id='1')
+          section.box
+            a#product01.watch(href='#profile', data-id='01')
               img(src='img/product/vwa01.png')
             .swatch-boundary
               .swatch-wrap
@@ -53,7 +51,7 @@ html
                 .r3.ribbon.vwa01-C
         li
           section.box
-            a#product02.watch(href='#profile', data-id='2')
+            a#product02.watch(href='#profile', data-id='02')
               img(src='img/product/vwa02.png')
             .swatch-boundary
               .swatch-wrap
@@ -62,65 +60,69 @@ html
                 .r3.ribbon.vwa02-C
         li
           section.box
-            a#product03.watch(href='#profile', data-id='3')
+            a#product03.watch(href='#profile', data-id='03')
               img(src='img/product/vwa03.png')
             .swatch-boundary
               .swatch-wrap
                 .r1.ribbon.vwa03-A
                 .r2.ribbon.vwa03-B
                 .r3.ribbon.vwa03-C
-    hr
+    //- hr
     section#profile.feature
 
-      h2
-        span.productTitle
-          = "a watch!"
-        = " in "
-        span.productColour
-          = "Choose"
+      section.feature-inner
+        h2
+          span.productTitle
+            = "a watch!"
+          = " in "
+          span.productColour
+            = "Choose"
 
 
-      img#lightbox(src='img/lightbox/vwa-empty.png')
+        img#lightbox(src='img/lightbox/vwa-empty.png')
 
-      table#productTable
-        thead
-          tr
-            th(colspan="2")
-              span.productColour
-                = "Choose "
-              span.productTitle
-                = "a watch!"
-        tbody
-          tr
-            td Bezel
-            td Anodized Aluminum Alloy
-          tr
-            td Case
-            td High Grade Bayer PC with FDA degree
-          tr
-            td Glass
-            td Hardened
-          tr
-            td Dial
-            td Copper
-          tr
-            td Hands
-            td Copper Alloy with Luminous Function
-          tr
-            td Strap material
-            td Silicone Rubber
-          tr
-            td Weight
-            td 43m
-          tr
-            td Case Diameter
-            td 4.45cm
-          tr
-            td Strap length
-            td 27cm
+        table#productTable
+          thead
+            tr
+              th(colspan="2")
+                span.productColour
+                  = "Choose "
+                span.productTitle
+                  = "a watch!"
+          tbody
+            tr
+              td Bezel
+              td Anodized Aluminum Alloy
+            tr
+              td Case
+              td High Grade Bayer PC with FDA degree
+            tr
+              td Glass
+              td Hardened
+            tr
+              td Dial
+              td Copper
+            tr
+              td Hands
+              td Copper Alloy with Luminous Function
+            tr
+              td Strap material
+              td Silicone Rubber
+            tr
+              td Weight
+              td 43m
+            tr
+              td Case Diameter
+              td 4.45cm
+            tr
+              td Strap length
+              td 27cm
 
-      a#back.button.generic(href='#range') Back &uarr;
-      a#continue.button.generic(href='#claim') Continue &darr;
+        a#back.button.generic(href='#range') Back &uarr;
+        a#continue.button.generic(href='#claim') Continue &darr;
+
+
+
     hr
 
 

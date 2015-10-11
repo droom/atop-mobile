@@ -156,7 +156,35 @@ $('a.watch').click(function () {
 
 
 
-    $('#profile').css('background-color', '#'+productHex);
+    // $('#profile').css('background',
+
+    //   '-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(100%, #'+productHex+'))
+
+
+
+    //   '
+
+    //   );
+
+
+
+
+      // radial-gradient(ellipse at center, #ffffff 0%, #'+productHex+' 100%);
+
+      // -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #'+productHex+' 100%);
+
+      // -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(100%, #'+productHex+'));
+
+      // -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #'+productHex+' 100%);
+
+      // radial-gradient(ellipse at center, #ffffff 0%, #'+productHex+' 100%);
+
+
+
+    $('#profile').css('background', '#'+productHex);
+
+
+
     $('#profile').css('min-height', browserHeight);
     // $('#range').css('min-height', browserHeight);
 
