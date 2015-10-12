@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
     "title"  : "VWA—02",
     "colour" : "yellow",
     "code"   : "vwa02",
-    "hex"    : "ffd94d",
+    "hex"    : "f3d54f",
     "reverse": false,
     "url"    : "http://ideahouse.com.my/proddetail.asp?id=OCAT&pid=3F3E25445457&productid=VWA-02"
   },
@@ -36,28 +36,28 @@ jQuery(document).ready(function($){
     "title"  : "VWA-05",
     "colour" : "red",
     "code"   : "vwa05",
-    "hex"    : "e94840",
+    "hex"    : "ff271a",
     "url"    : "http://ideahouse.com.my/proddetail.asp?id=OCAT&pid=3F3E25445450&productid=VWA-05"
   },
   {
     "title"  : "VWA-06",
     "colour" : "orange",
     "code"   : "vwa06",
-    "hex"    : "ce4524",
+    "hex"    : "fe4e00",
     "url"    : "http://ideahouse.com.my/proddetail.asp?id=OCAT&pid=3F3E25445453&productid=VWA-06"
   },
   {
     "title"  : "VWA-07",
     "colour" : "black",
     "code"   : "vwa07",
-    "hex"    : "1d1619",
+    "hex"    : "000000",
     "url"    : "http://ideahouse.com.my/images/product/VWA_07_008_ATOP%20Watch_Colorful%20Series_Black_TN.jpg"
   },
   {
     "title"  : "VWA-08",
     "colour" : "white/black",
     "code"   : "vwa08",
-    "hex"    : "272423",
+    "hex"    : "e4e4e4",
     "url"    : "http://ideahouse.com.my/proddetail.asp?id=OCAT&pid=3F3E2544545D&productid=VWA-08"
   },
   {
