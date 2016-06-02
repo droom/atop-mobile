@@ -1,0 +1,160 @@
+
+    
+
+@keyframes turn-m
+  0%
+    transform: rotateZ(0deg) translateZ(10px)
+  100%
+    transform: rotateZ(360deg) translateZ(10px)
+
+
+@keyframes turn-mshadow
+  0%
+    transform: rotateZ(0deg) translateZ(5px)
+  100%
+    transform: rotateZ(360deg) translateZ(5px)
+
+
+@keyframes turn-h
+  0%
+    transform: rotateZ(0deg) translateZ(4px)
+  100%
+    transform: rotateZ(360deg) translateZ(4px)
+
+
+#shadow
+  opacity: 0.3
+  filter: url(#blur-effect-1)
+
+
+
+
+section.feature
+  height: 100vh
+  background: #ccc
+  margin: 0 auto
+  text-align: center
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .perspective-wrap
+    outline: 2px solid blue
+    position: relative
+    width: 500px
+    height: 620px
+    margin: 0 auto
+    text-align: center
+
+    .bitmap
+      width: 500px
+      height: 620px
+      margin: 0 auto
+      text-align: center
+      
+      .trunk
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 50
+
+      .shadow
+        position: absolute
+        top: 383px
+        left: 144px
+        z-index: 49
+
+      .reflection
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 48
+        opacity: 0.2
+
+
+    .perspective
+      transform: scaleX(1) scaleY(0.95) scaleZ(1) rotateX(23deg) rotateY(-20deg) rotateZ(24deg) translateX(71px) translateY(41px) skew(0deg, -.3deg)
+      transition: ease 1s all
+      position: relative
+      perspective-origin: 50% 50%
+      transform-style: preserve-3d
+      height: 350px
+      width: 350px
+      z-index: 51
+
+
+
+      .glass,
+      img,
+      svg
+        position: absolute
+        top: 0
+        left: 0
+        
+
+
+      .turn-h
+        animation-duration: 30s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        animation-name: turn-h
+
+      .turn-m
+        animation-duration: 5s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        animation-name: turn-m
+
+      .turn-mshadow
+        animation-duration: 5s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        animation-name: turn-mshadow
+
+
+      .type
+        transform: translateZ(16px)
+        transition: ease 1s all
+        
+      .type:hover
+        transform: translateZ(16px) rotateZ(223deg) 
+
+      .ring
+        transform: translateZ(15px)
+
+      .glass
+        background: -moz-linear-gradient(-45deg,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 100%)
+        background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 100%)
+        background: linear-gradient(135deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 100%)
+
+        transform: translateZ(14px)
+        border-radius: 50%
+        width: 300px
+        height: 300px
+        opacity: 0.6
+        
+        top: 30px
+        left: 10px
+
+      .node
+        transform: translateZ(11px)
+
+      .dial-m
+
+      .dial-mshadow
+
+      .dial-h
+
+      .seconds
+        transform: translateZ(-14px)
+        top: 210px
+        left: 131px
+        
+      .wedge
+        transform: translateZ(4px)
+
+      .check
+        transform: translateZ(-15px) translateX(-2px)
+        left: -8px
+        top: -3px
+        

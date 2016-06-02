@@ -1,11 +1,30 @@
-#logo
-  z-index: 8
-  position: fixed
-  top: 0
-  left: 0
+table#productTable
+  background: $base
+  background: $darkGrey
+  background: rgba(0, 0, 0, 0.7)
+  margin-bottom: 8px
+  width: 70%
+  margin: 0 auto
+  border-radius: 2px
 
-a#logo
-  height: 60px
+  th
+    text-align: left
+    padding: 20px 20px 25px 20px
+  td
+    border-top: 1px solid rgba(0, 0, 0, 0.2)
+    color: $darkGrey
+    color: $base
+    vertical-align: top
+    text-align: left
+    padding: 5px 20px 12px 20px
+    font-family: monospace
+
+  td:first-child
+    width: 35%
+    padding-right: 20px
+  td:last-child
+    width: 65%
+
 
 @media (min-width: 0px) and (max-width: $tablet-max)
   #logo
@@ -30,8 +49,9 @@ img.editorial2
   img.editorial2
     display: none
 
-a.button
-  font-family: "Din Monospace Regular", "Lucida Console", Monaco, monospace
+.buttons
+  background: pink
+  // font-family: "Din Monospace Regular", "Lucida Console", Monaco, monospace
   font-size: 1.4rem
   font-weight: normal
   font-style: normal
@@ -40,22 +60,30 @@ a.button
   line-height: 1.3em
   border: none
   text-transform: uppercase
-  padding: 20px 25px
+  text-decoration: none
+  padding: 10px 15px
   border: none
   display: block
-  &.generic
-    margin: 0 auto
-  &.generic + &.generic
-    margin-top: 15px
-  &.cta
-    margin-top: 40px
-    margin-left: -6px
-    transition: all 100ms ease-in
-    box-shadow: 6px 6px 0px 0px rgba(50, 50, 50, 0.4)
+
+  position: absolute
+  top: 50px
+  right: 0
+  // &.generic
+    // margin: 0 auto
+  // &.generic + &.generic
+    // margin-top: 15px
+.cta
+  margin-top: 40px
+  margin-left: -6px
+  transition: all 100ms ease-in
+  box-shadow: 6px 6px 0px 0px rgba(50, 50, 50, 0.4)
+  border: none
+  background: white
+  padding: 16px 20px
 
 @media (max-width: $phone-max)
-  button
-    &.cta
-      margin-top: 20px
+  // button
+  //   &.cta
+  //     margin-top: 20px
 
 

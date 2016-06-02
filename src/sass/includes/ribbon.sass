@@ -1,22 +1,28 @@
-.ribbon
-  background-image: url("../img/noise.png")
-  width: 0px
-  height: 30px
-  -webkit-transition: width 400ms ease-in-out
-  -moz-transition: width 400ms ease-in-out
-  -o-transition: width 400ms ease-in-out
-  transition: width 400ms ease-in-out
-.r1, .r2, .r3
-  -webkit-backface-visibility: hidden
-.r1
-  margin-left: 19px
-.r2
-  margin-top: -1px
-  margin-left: 8px
-  transition-delay: 0.1s
-.r3
-  margin-left: -5px
-  transition-delay: 0.2s
+section.box
+  
+  .ribbon
+    background-image: url("../img/noise.png")
+    width: 0px
+    height: 30px
+    -webkit-transition: width 400ms ease-in-out
+    -moz-transition: width 400ms ease-in-out
+    -o-transition: width 400ms ease-in-out
+    transition: width 400ms ease-in-out
+    -webkit-backface-visibility: hidden
+
+  .ribbon:nth-child(1)
+    margin-left: 19px
+      
+  .ribbon:nth-child(2)
+    margin-top: -1px
+    margin-left: 8px
+    transition-delay: 0.1s
+    
+  .ribbon:nth-child(3)
+    margin-left: -5px
+    transition-delay: 0.2s
+
+
 
 .swatch-wrap
   margin: auto
@@ -50,6 +56,8 @@
   position: relative
 .box:hover .ribbon
   width: 350px
+  width: 343px
+  
 .box:first-child
   border:none
 
@@ -57,3 +65,4 @@
 @media (min-width: 0px) and (max-width: $tablet-max)
   .ribbon
     width: 350px
+    width: 343px

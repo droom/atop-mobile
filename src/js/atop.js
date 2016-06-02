@@ -116,7 +116,7 @@ $('a.watch').click(function () {
   $('.feature-wrap').show();
   var productChoice = $(this).data('id');
 
-  console.log(browserHeight);
+  // console.log(browserHeight);
 
     // Which row to return to
     var productReturn = ($(this).attr("id"));
@@ -142,11 +142,12 @@ $('a.watch').click(function () {
 
     $('#lightbox').load(function(){
       console.log("loaded");
-      $('#lightbox').fadeIn('700');
-      $('.lightbox-wrap').css('height', 'auto');
-      $('.spinner').hide();
+      // $('#lightbox').fadeIn('700');
+      // $('.lightbox-wrap').css('height', 'auto');
+      // $('.spinner').hide();
 
     });
+
 
 
     $('.productColour').text(productColour);
@@ -154,45 +155,24 @@ $('a.watch').click(function () {
     $('h1').css('color', '#'+productHex);
     $('.logo').attr('fill', '#'+productHex);
 
+    $('.feature').css('background', '#'+productHex);
+    $('.feature').css('outline-color', '#'+productHex);
+
+    $('.feature').css('height', browserHeight);
+    // $('.feature-inner').css('height', browserHeight);
+
+    var lightboxHeight = $('#lightbox').height();
+    var difference = Math.floor(parseInt(browserHeight - lightboxHeight) / 2)
+
+    console.log("lightboxHeight is  "+lightboxHeight);
+    console.log("browserHeight is  "+browserHeight);
+    console.log("difference is  "+difference);
 
 
-    // $('#profile').css('background',
-
-    //   '-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(100%, #'+productHex+'))
-
-
-
-    //   '
-
-    //   );
-
-
-
-
-      // radial-gradient(ellipse at center, #ffffff 0%, #'+productHex+' 100%);
-
-      // -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #'+productHex+' 100%);
-
-      // -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(100%, #'+productHex+'));
-
-      // -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #'+productHex+' 100%);
-
-      // radial-gradient(ellipse at center, #ffffff 0%, #'+productHex+' 100%);
-
-
-
-    $('#profile').css('background', '#'+productHex);
-
-
-
-    $('#profile').css('min-height', browserHeight);
-    // $('#range').css('min-height', browserHeight);
+    $('#lightbox').css('margin-top', difference);
 
 
     $('#back').attr('href', '#'+productReturn);
-
-
-    // $('.clock').attr('fill', '#'+productHex);
 
   });
 
@@ -219,5 +199,29 @@ $(function() {
 
 
 
+$('a.build').click(function() {
+  console.log("what");
+
+  $('#wrap').toggle('active');
+
 
 });
+
+
+
+
+console.log("hello");
+
+// $('#build').click(function(){
+//   $('#wrap').css('background', 'yellow');
+
+// });
+
+
+
+});
+
+
+
+
+

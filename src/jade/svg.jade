@@ -1,0 +1,161 @@
+doctype html
+html
+  head
+    title ATOP
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    link(rel='stylesheet', media='screen', href='css/app.css')
+
+  body(data-role='page')
+    include _nav
+    include _grid
+
+    section.hero#hero
+      h1 ATOP the world.
+    
+    hr
+
+    section.type.intro
+      .col
+        .offset
+          h2 The new ATOP world series
+          p We gave our classic series a twist.
+          p Our unique patented world time movement now comes in a variety of colours for every personality.
+          p Made from high grade PC and with an aluminium alloy city bezel to switch to the desired timezone attached to a sweat resistant silicon rubber strap. The hands are copper alloy with luminous functionality for better visibility.
+      
+    hr
+
+    section#range.product
+      ul
+        li
+          section.box.vwa01
+            a#product01.watch(href='#profile', data-id='01')
+              include _svg-unit
+        li
+          section.box.vwa02
+            a#product02.watch(href='#profile', data-id='02')
+              include _svg-unit
+        li
+          section.box.vwa03
+            a#product03.watch(href='#profile', data-id='03')
+              include _svg-unit
+        li
+          section.box.vwa04
+            a#product01.watch(href='#profile', data-id='04')
+              include _svg-unit
+        li
+          section.box.vwa05
+            a#pr5duct02.watch(href='#profile', data-id='05')
+              include _svg-unit
+        li
+          section.box.vwa06
+            a#product03.watch(href='#profile', data-id='06')
+              include _svg-unit
+        li
+          section.box.vwa07
+            a#product01.watch(href='#profile', data-id='07')
+              include _svg-unit
+        li
+          section.box.vwa08
+            a#pr5duct02.watch(href='#profile', data-id='08')
+              include _svg-unit
+        li
+          section.box.vwa09
+            a#product03.watch(href='#profile', data-id='09')
+              include _svg-unit
+        li
+          section.box.vwa10
+            a#product01.watch(href='#profile', data-id='10')
+              include _svg-unit
+        li
+          section.box.vwa11
+            a#pr5duct02.watch(href='#profile', data-id='11')
+              include _svg-unit
+        li
+          section.box
+            a#product03.watch(href='#profile', data-id='12')
+              include _svg-unit
+        li
+          section.box
+            a#product01.watch(href='#profile', data-id='13')
+              include _svg-unit
+        li
+          section.box
+            a#pr5duct02.watch(href='#profile', data-id='14')
+              include _svg-unit
+
+
+    section#profile.feature
+
+      //- h2
+        span.productTitle
+          = "a watch!"
+        = " in "
+        span.productColour
+          = "Choose"
+
+      include _iso
+
+
+    hr
+
+    section.type
+      .col
+        .offset
+          
+          small
+            = "Bezel: Anodized Aluminum Alloy"
+            br
+            = "Case: High Grade Bayer PC with FDA degree"
+            br
+            = "Glass: Hardened"
+            br
+            = "Dial: Copper"
+            br
+            = "Hands: Copper Alloy with Luminous Function"
+            br
+            = "Strap material: Silicone Rubber"
+            br
+            = "Weight: 43m"
+            br
+            = "Case Diameter: 4.45cm"
+            br
+            = "Strap length: 27cm"
+
+    hr
+
+    footer
+      section.type
+        .col
+          .offset
+            p
+              | All content &copy; Ideahouse Corp. S/B
+              | / ATOP watches 2013
+            p
+              li Our trusted retailer
+              li
+                = "w: "
+                a(href='http://www.ideahouse.com.my') ideahouse.com.my
+              li t: +603 6275 4648
+              li f: +603 6272 1648
+              li e: info@ideahouse.com.my
+              li a: Kuala Lumpur, MALAYSIA
+
+                p ATOP headquaters
+            ul
+              li t: +603 6275 4648
+              li f: +603 6272 1648
+              li e: info@ideahouse.com.my
+              li a: Kuala Lumpur, MALAYSIA
+
+
+
+
+  script(type='text/javascript', src='js/jquery.min.js')
+  script(type='text/javascript', src='js/jquery.easing.js')
+  script(type='text/javascript', src='js/atop.min.js')
+
+
+

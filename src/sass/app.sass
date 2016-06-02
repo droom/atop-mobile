@@ -11,11 +11,61 @@ $tablet-max:  930px
 $tablet-min:  640px
 $phone-max:   639px
 
-// @import "includes/normalize.sass"
 @import "includes/type.sass"
 @import "includes/components.sass"
 @import "includes/swatch.sass"
 @import "includes/ribbon.sass"
 @import "includes/grid.sass"
+@import "includes/svg.sass"
+@import "includes/nav.sass"
+@import "includes/atop.sass"
+@import "includes/iso.sass"
+
+
+
+
+
+.flex
+  width: 100%
+  height: 100%
+  position: fixed
+  margin: auto
+  text-align: center
+  display: flex
+  justify-content: center
+  
+  .unit
+    min-width: 300px
+    max-width: 300px
+    flex-basis: auto
+    flex-grow: 1
+    width: 300px
+    min-width: 300px
+    height: 100%
+    border-left: 1px solid rgba(0,0,0,0.03)
+    border-right: 1px solid rgba(0,0,0,0.03)
+    
+  .unit + .unit
+    border-left: none
+  .unit + .unit + .unit
+
+
+@media (max-width: $tablet-max)
+  .flex
+    .unit
+    .unit + .unit
+    .unit + .unit + .unit
+      display: none
+
+
+@media (max-width: $phone-max)
+  .flex
+    .unit
+    .unit + .unit
+      display: none
+    .unit + .unit + .unit
+      display: none
+
+
 
 

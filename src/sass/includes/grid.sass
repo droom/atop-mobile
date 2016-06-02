@@ -3,23 +3,6 @@ body
   margin: 0
   padding: 0
 
-// footer
-//   padding: 100px 0 0 0
-
-table
-  margin-bottom: 8px
-  width: 50%
-  margin: 0 auto
-  td, th
-    color: $darkGrey
-    vertical-align: top
-    text-align: left
-    border-top: 1px solid $darkGrey
-  td:first-child
-    width: 35%
-    padding-right: 10px
-  td:last-child
-    width: 65%
 
 section
   display: block
@@ -29,61 +12,78 @@ section
   &.lifestyle
     background: url("../img/hero_lifestyle.jpg") 50% 0% no-repeat $base
     height: 600px
+
   &.product
     padding: 20px 0
     width: 900px
 
+  // &.feature
+  //   text-align: center
 
-  &.feature
-    text-align: center
-
-  &.feature-inner
-    padding: 30px
-    background: none
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%)
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.3)))
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%)
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%)
-    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%)
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%)
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255, 255, 255, 0.3)', endColorstr='rgba(0, 0, 0, 0.3)',GradientType=0 )
-    height: 100%
+  // &.feature-inner
+  //   background: none
+  //   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%)
+  //   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.2)))
+  //   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%)
+  //   background: -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%)
+  //   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%)
+  //   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%)
+  //   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255, 255, 255, 0.3)', endColorstr='rgba(0, 0, 0, 0.2)',GradientType=0 )
+  //   height: 100%
+    
+  //   h2
+  //     padding: 30px
+  //     height: 60px
+  //     position: absolute
+  //     margin: 0 auto
 
   &.shop
 
   &.type
-    max-width: 900px
-    margin: auto
-    padding: 40px 0 70px 170px
-    &.hero
-      background: url("../img/hero_desktop.png") 50% 0% no-repeat $base
-      height: 550px
-      padding: 0 0 0 170px
+    margin: 0 auto
 
-.col
-  margin: 0
-  max-width: 340px
-.col-l
-  float: left
-  width: 38%
-  clear: left
-.col-r
-  float: right
-  width: 60%
-  clear: none
-  position: relative
+    .col
+      margin: 0 auto
+      max-width: 300px
+      
+      .offset
+        margin-left: -300px
+        max-width: 300px
+        padding: 2rem 0
+      
+    .col-l
+      float: left
+      width: 38%
+      clear: left
+      
+    .col-r
+      float: right
+      width: 60%
+      clear: none
+      position: relative
+
+
+  &.hero
+    background: url("../img/hero_desktop.png") 50% 0% no-repeat $base
+    height: 550px
+    padding: 0
+    text-align: center
+
 
 
 @media (min-width: $tablet-min) and (max-width: $tablet-max)
   body
     section
       &.product
-        min-width: 600px
-        max-width: 625px
+        // outline: 1px solid red
+        // min-width: 600px
+        // max-width: 625px
+        width: 600px
         padding: 35px 0
-        ul
-          li:nth-child(even)
-            float: right
+
+        // ul
+        //   li:nth-child(even)
+        //     float: right
 
       &.type
         width: 100%
@@ -103,8 +103,10 @@ section
 
     .col-l
       width: 45%
+      width: 50%
     .col-r
       width: 52%
+      width: 50%
 
 @media (max-width: $phone-max)
   body

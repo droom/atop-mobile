@@ -65,7 +65,10 @@ module.exports = function(grunt) {
             }
           },
           files: {
-            "dist/index.html": ["src/jade/index.jade"]
+            "dist/index.html": ["src/jade/index.jade"],
+            "dist/grid.html": ["src/jade/grid.jade"],
+            "dist/svg.html": ["src/jade/svg.jade"],
+            "dist/3qtr.html": ["src/jade/3qtr.jade"]
           }
         }
       }
@@ -74,13 +77,13 @@ module.exports = function(grunt) {
     });
 
 
-grunt.loadNpmTasks('grunt-contrib-watch');
-grunt.loadNpmTasks('grunt-contrib-jade');
-grunt.loadNpmTasks('grunt-contrib-uglify');
-grunt.loadNpmTasks('grunt-contrib-sass');
-grunt.loadNpmTasks('grunt-contrib-imagemin');
-grunt.loadNpmTasks('grunt-postcss');
-grunt.loadNpmTasks('grunt-uncss');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-uncss');
 // Default task(s).
 grunt.registerTask('default', ['uglify', 'sass', 'postcss','jade']);
 
