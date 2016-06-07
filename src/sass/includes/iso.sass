@@ -1,6 +1,3 @@
-
-    
-
 @keyframes turn-m
   0%
     transform: rotateZ(0deg) translateZ(10px)
@@ -27,52 +24,98 @@
   filter: url(#blur-effect-1)
 
 
+$unitWidth: 500px
+$unitHeight: 620px
+// $unitHeight: 100vh
 
 
 section.feature
+  position: relative
   height: 100vh
+  width: 100%
   background: #ccc
+  
+  .iso-wrap:nth-child(1)
+    z-index: 10
+
+  .iso-wrap:nth-child(2)
+    z-index: 9
+
+  .iso-wrap:nth-child(3)
+    z-index: 8
+
+
+.iso-wrap
+  height: 100vh
+  width: 100%
   margin: 0 auto
   text-align: center
   display: flex
   justify-content: center
   align-items: center
+  position: absolute
+  top: 0
+  left: 0
 
-  .perspective-wrap
-    outline: 2px solid blue
+  .grad
+    height: 100%
+    width: 100%
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 40%,rgba(0,0,0,0.2) 100%)
+
+
+  .circle
+    height: 50%
+    width: 150%
+    margin-top: 40%
+    background: rgba(0,0,0,0)
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 70%)
+
+
+  .iso
     position: relative
-    width: 500px
-    height: 620px
+    width: $unitWidth
+    height: $unitHeight
     margin: 0 auto
     text-align: center
 
-    .bitmap
-      width: 500px
-      height: 620px
-      margin: 0 auto
-      text-align: center
-      
-      .trunk
-        position: absolute
-        top: 0
-        left: 0
-        z-index: 50
+    .measure
+      transition: ease 330ms all
+      position: relative
+      transform: scaleX(1) scaleY(.95) scaleZ(1) rotateX(23deg) rotateY(-20deg) rotateZ(-59deg) translateX(-29px) translateY(26px) skew(0deg, 2deg)
+      perspective-origin: 50% 50%
+      transform-style: preserve-3d
+      height: 350px
+      width: 350px
+      z-index: 5
 
-      .shadow
-        position: absolute
-        top: 383px
-        left: 144px
-        z-index: 49
+      .diameter
+        height: 12px
+        width: 100%
+        border-top: 1px solid white
+        border-left: 1px solid white
+        border-right: 1px solid white
+        
+      .diameter:before
+        content: "122mm"
+        text-align: center
+        color: white
+        margin-top: -25px
+        display: block
+        font-family: arial
+        font-size: 13px
+        letter-spacing: 0.05em
 
-      .reflection
-        position: absolute
-        top: 0
-        left: 0
-        z-index: 48
-        opacity: 0.2
 
 
-    .perspective
+
+    .measure.yo
+      opacity: 0
+      // transform: scaleX(1) scaleY(.95) scaleZ(1) rotateX(91deg) rotateY(-20deg) rotateZ(-59deg) translateX(-29px) translateY(26px) skew(0deg, 2deg)
+      height: 210px
+      width: 50px
+
+
+    .face
       transform: scaleX(1) scaleY(0.95) scaleZ(1) rotateX(23deg) rotateY(-20deg) rotateZ(24deg) translateX(71px) translateY(41px) skew(0deg, -.3deg)
       transition: ease 1s all
       position: relative
@@ -80,9 +123,7 @@ section.feature
       transform-style: preserve-3d
       height: 350px
       width: 350px
-      z-index: 51
-
-
+      z-index: 5
 
       .glass,
       img,
@@ -91,7 +132,6 @@ section.feature
         top: 0
         left: 0
         
-
 
       .turn-h
         animation-duration: 30s
@@ -126,13 +166,11 @@ section.feature
         background: -moz-linear-gradient(-45deg,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 100%)
         background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 100%)
         background: linear-gradient(135deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 100%)
-
         transform: translateZ(14px)
         border-radius: 50%
         width: 300px
         height: 300px
         opacity: 0.6
-        
         top: 30px
         left: 10px
 
@@ -158,3 +196,47 @@ section.feature
         left: -8px
         top: -3px
         
+
+    .bitmap
+      width: $unitWidth
+      height: $unitHeight
+      overflow: visible
+      
+      margin: 0 auto
+      text-align: center
+      position: absolute
+      top: 0
+      left: 0
+      
+      .trunk
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 4
+
+      .shadow
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 3
+
+      .glow
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 2
+        opacity: 1
+
+      .reflection
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 1
+        opacity: 0.2
+
+      .reflection-trunk
+        position: absolute
+        top: 436px
+        left: 66px
+        z-index: 1
+        opacity: 0.3

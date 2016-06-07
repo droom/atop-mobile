@@ -142,10 +142,6 @@ $('a.watch').click(function () {
 
     $('#lightbox').load(function(){
       console.log("loaded");
-      // $('#lightbox').fadeIn('700');
-      // $('.lightbox-wrap').css('height', 'auto');
-      // $('.spinner').hide();
-
     });
 
 
@@ -157,21 +153,18 @@ $('a.watch').click(function () {
 
     $('.feature').css('background', '#'+productHex);
     $('.feature').css('outline-color', '#'+productHex);
-
-    $('.feature').css('height', browserHeight);
+    
+    // $('.feature').css('height', browserHeight);
     // $('.feature-inner').css('height', browserHeight);
 
-    var lightboxHeight = $('#lightbox').height();
-    var difference = Math.floor(parseInt(browserHeight - lightboxHeight) / 2)
+    // var lightboxHeight = $('#lightbox').height();
+    // var difference = Math.floor(parseInt(browserHeight - lightboxHeight) / 2)
 
-    console.log("lightboxHeight is  "+lightboxHeight);
-    console.log("browserHeight is  "+browserHeight);
-    console.log("difference is  "+difference);
+    // console.log("lightboxHeight is  "+lightboxHeight);
+    // console.log("browserHeight is  "+browserHeight);
+    // console.log("difference is  "+difference);
 
-
-    $('#lightbox').css('margin-top', difference);
-
-
+    // $('#lightbox').css('margin-top', difference);
     $('#back').attr('href', '#'+productReturn);
 
   });
@@ -185,12 +178,9 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-
           scrollTop: target.offset().top
         }, 400, 'easeInOutExpo');
-
         return false;
-
       }
     }
   });
@@ -199,23 +189,23 @@ $(function() {
 
 
 
-$('a.build').click(function() {
-  console.log("what");
-
-  $('#wrap').toggle('active');
-
+$('a.build').click(function(e) {
+  console.log("heyhey");
+  e.preventDefault();
+  $('#measure').toggleClass('yo');
 
 });
 
 
 
 
-console.log("hello");
-
+// console.log("hello");
 // $('#build').click(function(){
 //   $('#wrap').css('background', 'yellow');
-
 // });
+
+
+
 
 
 

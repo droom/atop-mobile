@@ -3,7 +3,6 @@ body
   margin: 0
   padding: 0
 
-
 section
   display: block
   clear: both
@@ -17,54 +16,13 @@ section
     padding: 20px 0
     width: 900px
 
-  // &.feature
-  //   text-align: center
-
-  // &.feature-inner
-  //   background: none
-  //   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%)
-  //   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.2)))
-  //   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%)
-  //   background: -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%)
-  //   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%)
-  //   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.2) 100%)
-  //   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255, 255, 255, 0.3)', endColorstr='rgba(0, 0, 0, 0.2)',GradientType=0 )
-  //   height: 100%
-    
-  //   h2
-  //     padding: 30px
-  //     height: 60px
-  //     position: absolute
-  //     margin: 0 auto
-
-  &.shop
-
   &.type
-    margin: 0 auto
-
-    .col
-      margin: 0 auto
-      max-width: 300px
-      
-      .offset
-        margin-left: -300px
-        max-width: 300px
-        padding: 2rem 0
-      
-    .col-l
-      float: left
-      width: 38%
-      clear: left
-      
-    .col-r
-      float: right
-      width: 60%
-      clear: none
-      position: relative
-
+    margin: 0
+    padding: 40px
+    max-width: 300px
 
   &.hero
-    background: url("../img/hero_desktop.png") 50% 0% no-repeat $base
+    background: url("../bitmap/hero.png") 50% 0% no-repeat $base
     height: 550px
     padding: 0
     text-align: center
@@ -75,67 +33,60 @@ section
   body
     section
       &.product
-        // outline: 1px solid red
-        // min-width: 600px
-        // max-width: 625px
         width: 600px
         padding: 35px 0
 
-        // ul
-        //   li:nth-child(even)
-        //     float: right
+      // &.type
+      //   width: 100%
+      //   padding: 40px 0 70px 52px
+      //   &.hero
+      //     padding: 0 0 0 52px
 
-      &.type
-        width: 100%
-        padding: 40px 0 70px 52px
-        &.hero
-          padding: 0 0 0 52px
+    // table
+    //   margin-bottom: 30px
+    //   td
+    //     padding: 0 0 10px 0
+    //   td:first-child
+    //     width: 28%
+    //     padding-right: 10px
+    //   td:last-child
+    //     width: 55%
 
-    table
-      margin-bottom: 30px
-      td
-        padding: 0 0 10px 0
-      td:first-child
-        width: 28%
-        padding-right: 10px
-      td:last-child
-        width: 55%
+    // .col-l
+    //   width: 45%
+    //   width: 50%
+    // .col-r
+    //   width: 52%
+    //   width: 50%
 
-    .col-l
-      width: 45%
-      width: 50%
-    .col-r
-      width: 52%
-      width: 50%
+// @media (max-width: $phone-max)
+//   body
+//     section
+//       display: block
+//       clear: both
+//       margin: auto
+//       width: 100%
 
-@media (max-width: $phone-max)
-  body
-    section
-      display: block
-      clear: both
-      margin: auto
-      width: 100%
+//       &.product
+//         padding: 40px 0
+//         margin: auto
+//         width: 300px
+//       // &.type
+//         // width: 100%
+//         // padding: 15px 0 30px 20px
+//         // &.hero
+//           // width: 100%
+//           // background: url("../bitmap/hero.png") 50% 0% no-repeat $base
+//           // height: 400px
+//           // padding: 0 0 0 20px
 
-      &.product
-        padding: 40px 0
-        margin: auto
-        width: 300px
-      &.type
-        width: 100%
-        padding: 15px 0 30px 20px
-        &.hero
-          width: 100%
-          background: url("../img/hero_mobile.jpg") 50% 0% no-repeat $base
-          height: 400px
-          padding: 0 0 0 20px
-
-    .col-l
-      width: 100%
-      min-height: none
-      clear: left
-      margin: auto
-    .col-r
-      width: 100%
-      clear: left
-      margin: auto
+//     .col-l
+//       width: 100%
+//       min-height: none
+//       clear: left
+//       margin: auto
+//     .col-r
+//       width: 100%
+//       clear: left
+//       margin: auto
 

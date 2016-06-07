@@ -1,15 +1,35 @@
-.perspective-wrap
-	.perspective
-		.glass
-		img(src="iso/type.png").type
-		img(src="iso/ring.svg").ring
-		img(src="iso/seconds.svg").seconds
-		img(src="iso/node.svg").node
-		img(src="iso/dial-m.svg").dial-m.turn-m
-		include svg/_dial-mshadow
-		img(src="iso/dial-h.svg").dial-h.turn-h
-		img(src="iso/check.svg").check
-	.bitmap
-		img(src="iso/trunk.svg").trunk
-		img(src="iso/reflection.svg").reflection
+.iso-wrap
+	.iso
+		.measure#measure
+			.diameter
+
+
+.iso-wrap
+	.iso
+		.face
+			.glass
+			img(src="iso/type.png").type
+			img(src="iso/ring.svg").ring
+			img(src="iso/seconds.svg").seconds
+			img(src="iso/node.svg").node
+			img(src="iso/dial-m.svg").dial-m.turn-m
+			//- include svg/_dial-mshadow
+			img(src="iso/dial-h.svg").dial-h.turn-h
+			img(src="iso/check.svg").check
+		.bitmap
+			img(src="iso/trunk.svg").trunk
+			img(src="iso/shadow.png").shadow
+
+
+.iso-wrap
+	.circle
+
+//- .iso-wrap
+	//- .iso
+		//- .bitmap
+			//- img(src="iso/glow.svg").glow
+			//- include svg/_glow
+			//- img(src="iso/reflection.svg").reflection
+			//- img(src="iso/reflection-trunk.svg").reflection-trunk
+
 
