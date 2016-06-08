@@ -1,24 +1,36 @@
-img(src='bird/unit-texture.png')
+.def.glass.offset
+  img(src='bird/unit-glass.png').h300.time
 
-svg.bird-face
-  use(xlink:href='#node').node
+.def.tone
+  img(src='bird/unit-tone.png').h400
 
-svg.bird-face
-  use(xlink:href='#minutes').minutes
+.def.node.offset
+  svg.h300
+    use(xlink:href='#node')
 
-svg.bird-body
-  use(xlink:href='#wedge').wedge
+.def.minutes.offset
+  svg.h300
+    use(xlink:href='#minutes')
 
-svg.bird-body
-  use(xlink:href='#dial').dial
+.def.wedge
+  svg.h400
+    use(xlink:href='#wedge')
 
-svg.bird-body
-  use(xlink:href='#roundel').roundel
+.def.dial
+  svg.h400
+    use(xlink:href='#dial')
 
-svg.bird-body
-  use(xlink:href='#shape').shape
+.def.roundel
+  svg.h400
+    use(xlink:href='#roundel')
 
-img(src='bird/unit-shadow.png')
+.def.shape
+  svg.h400
+    use(xlink:href='#shape')
+
+.def.shadow
+  img(src='bird/unit-shadow.png').h400
+
 
 .swatch-boundary
   .swatch-wrap

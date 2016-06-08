@@ -166,8 +166,8 @@ $('a.watch').click(function () {
 
     // $('#lightbox').css('margin-top', difference);
     $('#back').attr('href', '#'+productReturn);
-
   });
+
 
 
 
@@ -190,22 +190,35 @@ $(function() {
 
 
 $('a.build').click(function(e) {
-  console.log("heyhey");
   e.preventDefault();
   $('#measure').toggleClass('yo');
-
 });
 
 
 
-
-// console.log("hello");
-// $('#build').click(function(){
-//   $('#wrap').css('background', 'yellow');
-// });
+$("svg.time").attr("class", "bird-face time play");
 
 
+console.log("yo");
 
+
+$(window).scroll(function() {
+  clearTimeout($.data(this, 'scrollTimer'));
+  console.log("1");
+
+  // $('#time').removeClass('play');
+  $("svg.time").attr("class", "h300 time pause");
+
+  $.data(this, 'scrollTimer', setTimeout(function() {
+    console.log("2");
+
+    // $('#time').addClass('play');
+    $("svg.time").attr("class", "h300 time");
+
+
+
+  }, 250));
+});
 
 
 

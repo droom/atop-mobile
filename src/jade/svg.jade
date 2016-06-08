@@ -7,7 +7,7 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     link(rel='stylesheet', media='screen', href='css/app.css')
 
-  body(data-role='page')
+  body(data-role='page')#page
 
     svg
       symbol#shape(viewBox="0 0 300 400")
@@ -71,8 +71,9 @@ html
         c-2.32,0.754-4.584,1.63-6.79,2.612c-2.224,0.992-4.385,2.097-6.479,3.308c-0.043,0.025-0.084,0.053-0.127,0.078l0.074,0.13\
         L115.273,152.153z')
 
-      symbol#roundel(viewbox='0 0 300 400')
-        path(d="M149.999,108.5C92.84,108.5,46.5,154.837,46.5,211.999C46.5,269.16,92.84,315.5,149.999,315.5 c57.163,0,103.501-46.34,103.501-103.501C253.5,154.837,207.162,108.5,149.999,108.5z M149.999,290.832 c-43.536,0-78.832-35.295-78.832-78.833s35.296-78.833,78.832-78.833c43.54,0,78.834,35.295,78.834,78.833 S193.539,290.832,149.999,290.832z")
+      symbol#roundel(width="300px" height="300px" viewBox="-100 6 300 400" enable-background="new -100 6 300 400" xml:space="preserve")
+        path(d="M50.499,115C-6.66,115-53,161.337-53,218.499C-53,275.66-6.66,322,50.499,322 C107.662,322,154,275.66,154,218.499C154,161.337,107.662,115,50.499,115z M50.499,297.332 c-43.536,0-78.832-35.295-78.832-78.833s35.296-78.833,78.832-78.833c43.54,0,78.834,35.295,78.834,78.833 S94.039,297.332,50.499,297.332z")
+
 
       symbol#minutes(viewbox='-174.5 -56.5 300 300')
         g
@@ -85,21 +86,22 @@ html
 
     include _nav
     include _grid
+    
 
     section.hero#hero
       h1 ATOP the world.
 
     hr
 
-    section.type.intro
-      .col
-        .offset
-          h2 The new ATOP world series
-          p We gave our classic series a twist.
-          p Our unique patented world time movement now comes in a variety of colours for every personality.
-          p Made from high grade PC and with an aluminium alloy city bezel to switch to the desired timezone attached to a sweat resistant silicon rubber strap. The hands are copper alloy with luminous functionality for better visibility.
+    //- section.type.intro
+    //-   .col
+    //-     .offset
+    //-       h2 The new ATOP world series
+    //-       p We gave our classic series a twist.
+    //-       p Our unique patented world time movement now comes in a variety of colours for every personality.
+    //-       p Made from high grade PC and with an aluminium alloy city bezel to switch to the desired timezone attached to a sweat resistant silicon rubber strap. The hands are copper alloy with luminous functionality for better visibility.
       
-    hr
+    //- hr
 
     section#range.product
       ul
@@ -140,54 +142,33 @@ html
             a#product09.watch(href='#profile', data-id='09')
               include _bird-defs
 
-        //- li
-        //-   section.box.vwa10
-        //-     a#product10.watch(href='#profile', data-id='10')
-        //-       include _bird-defs
-        //- li
-        //-   section.box.vwa11
-        //-     a#pr0duct11.watch(href='#profile', data-id='11')
-        //-       include _bird-defs
-        //- li
-        //-   section.box
-        //-     a#product12.watch(href='#profile', data-id='12')
-        //-       include _bird-defs
-        //- li
-        //-   section.box
-        //-     a#product13.watch(href='#profile', data-id='13')
-        //-       include _bird-defs
-        //- li
-        //-   section.box
-        //-     a#product14.watch(href='#profile', data-id='14')
-        //-       include _bird-defs
 
 
-    section.feature#profile
+    //- section.feature#profile
       include _iso
+    //- hr
+    //- section.type
+    //-   small
+    //-     = "Bezel: Anodized Aluminum Alloy"
+    //-     br
+    //-     = "Case: High Grade Bayer PC with FDA degree"
+    //-     br
+    //-     = "Glass: Hardened"
+    //-     br
+    //-     = "Dial: Copper"
+    //-     br
+    //-     = "Hands: Copper Alloy with Luminous Function"
+    //-     br
+    //-     = "Strap material: Silicone Rubber"
+    //-     br
+    //-     = "Weight: 43m"
+    //-     br
+    //-     = "Case Diameter: 4.45cm"
+    //-     br
+    //-     = "Strap length: 27cm"
+    //- hr
 
-    hr
 
-    section.type
-      small
-        = "Bezel: Anodized Aluminum Alloy"
-        br
-        = "Case: High Grade Bayer PC with FDA degree"
-        br
-        = "Glass: Hardened"
-        br
-        = "Dial: Copper"
-        br
-        = "Hands: Copper Alloy with Luminous Function"
-        br
-        = "Strap material: Silicone Rubber"
-        br
-        = "Weight: 43m"
-        br
-        = "Case Diameter: 4.45cm"
-        br
-        = "Strap length: 27cm"
-
-    hr
 
     footer
       section.type
@@ -204,13 +185,12 @@ html
           li e: info@ideahouse.com.my
           li a: Kuala Lumpur, MALAYSIA
 
-            p ATOP headquaters
+        p ATOP headquaters
         ul
           li t: +603 6275 4648
           li f: +603 6272 1648
           li e: info@ideahouse.com.my
           li a: Kuala Lumpur, MALAYSIA
-
 
 
 
